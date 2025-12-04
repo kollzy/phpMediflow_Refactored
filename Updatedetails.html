@@ -1,0 +1,15 @@
+
+<form action="../php/updatedPat.php" method="post">
+
+    <input type="hidden" name="cmrn" value="<?php echo $cmrn; ?>">
+
+    First Name: <input type="text" name="cname" value="<?php echo isset($name) ? $name : ''; ?>" required><br>
+    Address: <input type="text" name="caddress" value="<?php echo isset($address) ? $address : ''; ?>" required><br>
+    Email: <input type="email" name="cemail" value="<?php echo isset($cemail) ? $cemail : ''; ?>"><br>
+    Phone: <input type="text" name="cphone" value="<?php echo isset($cphone) ? $cphone : ''; ?>" required><br>
+    Medical Card: <br>
+    <input type="radio" name="medicalcard" value="Yes" <?php if(isset($medicalcard) && $medicalcard == 'Yes') echo 'checked'; ?>> Yes<br>
+    <input type="radio" name="medicalcard" value="No" <?php if(isset($medicalcard) && $medicalcard == 'No') echo 'checked'; ?>> No<br>
+
+    <input type="submit" name="submitdetailss" value="Update">
+</form>

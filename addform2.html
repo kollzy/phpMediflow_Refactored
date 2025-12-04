@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <form action="../php/addPat.php" method="post" class="add-patient-form">
+    <h2>Add Patient Details</h2>
+    <input type="text" name="cname" placeholder="Name" required><br>
+    <input type="text" name="caddress" placeholder="Home Address" required><br>
+    <input type="text" name="cemail" placeholder="Email" required><br>
+    <input type="text" name="cphone" placeholder="Phone" required><br>
+    <input type="text" name="cmrn" placeholder="Medical Record Number" required><br>
+   Do you have a Medical Card <input type="radio" name="medicalcard" value="yes"> yes
+<input type="radio" name="medicalcard" value="no"> no<br><br>
+    <input type="submit" name="submitdetails" value="SUBMIT">
+  </form>
+</body>
+
+</html>
